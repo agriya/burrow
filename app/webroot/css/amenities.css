@@ -1,0 +1,295 @@
+ol.amenities-list{
+	padding-bottom:10px;
+}
+ol.amenities-list li span + span {
+	background:url("../img/amenities.png") no-repeat scroll 0 0;
+	height:22px;
+	padding:4px 0 0 37px;
+}
+ol.amenities-list li {
+	padding:6px 8px;
+	width:227px;
+}
+ol.amenities-list li span, ol.amenities-list li, span.allowed, span.not-allowed {
+	float:left;
+}
+ol.amenities-list li span+span.amenities-am-19 {
+	padding:4px 0px 0px 20px;
+	font-size:11px;
+}
+span.allowed, span.not-allowed {
+	width:25px;
+	height:25px;
+	text-indent:-9999em;
+	margin:0 5px 0 0;
+}
+span.not-allowed {
+	background:url(../img/common-sprite2.png) no-repeat left -1323px;
+}
+span.allowed {
+	background:url(../img/common-sprite2.png) no-repeat left -1419px;
+}
+ol.amenities-list li span.amenities-am-1 {
+	background-position: 0 -5px;
+}
+ol.amenities-list li span.amenities-am-10 {
+	background-position: 0 -37px;
+}
+ol.amenities-list li span.amenities-am-11 {
+	background-position: 0 -64px;
+}
+ol.amenities-list li span.amenities-am-12 {
+	background-position: 0 -88px;
+}
+ol.amenities-list li span.amenities-am-13 {
+	background-position: 0 -114px;
+}
+ol.amenities-list li span.amenities-am-14 {
+	background-position: 0 -143px;
+}
+ol.amenities-list li span.amenities-am-15 {
+	background-position: 10px -172px;
+}
+ol.amenities-list li span.amenities-am-16 {
+	background-position: 0 -202px;
+}
+ol.amenities-list li span.amenities-am-17 {
+	background-position: 0 -239px;
+}
+ol.amenities-list li span.amenities-am-18 {
+	background-position: 0 -272px;
+}
+ol.amenities-list li span.amenities-am-19 {
+	background-position: 0 -309px;
+}
+ol.amenities-list li span.amenities-am-2 {
+	background-position: 0 -339px;
+}
+ol.amenities-list li span.amenities-am-20 {
+	background-position: 0 -379px;
+}
+ol.amenities-list li span.amenities-am-21 {
+	background-position: 0 -410px;
+}
+ol.amenities-list li span.amenities-am-22 {
+	background-position: 0 -447px;
+}
+ol.amenities-list li span.amenities-am-3 {
+	background-position: 0 -473px;
+}
+ol.amenities-list li span.amenities-am-4 {
+	background-position: 0 -499px;
+}
+ol.amenities-list li span.amenities-am-5 {
+	background-position: 0 -530px;
+}
+ol.amenities-list li span.amenities-am-6 {
+	background-position: 0 -565px;
+}
+ol.amenities-list li span.amenities-am-7 {
+	background-position: 0 -592px;
+}
+ol.amenities-list li span.amenities-am-8 {
+	background-position: 0 -621px;
+}
+ol.amenities-list li span.amenities-am-9 {
+	background-position: 0 -650px;
+}
+ol.amenities-list li span.amenities-ht-1 {
+	background-position: 0 -681px;
+}
+ol.amenities-list li span.amenities-ht-2 {
+	background-position: 0 -712px;
+}
+ol.amenities-list li span.amenities-ht-3 {
+	background-position: 0 -832px;
+}
+ol.amenities-list li span.amenities-ht-4 {
+	background-position: 0 -799px;
+}
+ol.amenities-list li span.amenities-ht-5 {
+	background-position: 0 -770px;
+}
+ol.amenities-list li span.amenities-ht-6 {
+	background-position: 0 -894px;
+}
+ol.amenities-list li span.amenities-ht-7 {
+	background-position: 0 -864px;
+}
+ol.amenities-list li span.amenities-ht-8 {
+	background-position: 0 -741px;
+}
+ol.amenities-list li span.amenities-ht-9 {
+	background-position: 0 -895px;
+}
+ol.amenities-list li span.amenities-rt-1 {
+	background-position: 0 -932px;
+}
+ol.amenities-list li span.amenities-rt-2 {
+	background-position: 0 -954px;
+}
+ol.amenities-list li span.amenities-rt-3 {
+	background-position: 0 -974px;
+} 
+
+/*small-icon style*/
+.category {
+	background:url("../img/small-icon1.png") no-repeat scroll 0 0;
+	padding:0 12px 0 18px;
+	height: 14px;
+    cursor: pointer;
+}
+.small-1 {
+	background-position: 0 0;
+}
+.pt-small-7 {
+	background-position: 0 -19px;
+}
+.pt-small-8 {
+	background-position: 0 -500px;
+}
+.pt-small-9 {
+	background-position: 0 -3300px;
+}
+.pt-small-10 {
+	background-position: 0 -762px;
+}
+.pt-small-11 {
+	background-position: 0 -300px;
+}
+.pt-small-12 {
+	background-position: 0 -400px;
+}
+.pt-small-17{
+	background-position: 0 -2700px;
+}
+.ht-small-1, .pt-small-14 {
+	background-position: 0 -700px;
+}
+.ht-small-2 {
+	background-position: 0 -800px;
+}
+.ht-small-3 {
+	background-position: 0 -1300px;
+}
+.ht-small-4 {
+	background-position: 0 -1200px;
+}
+.rt-small-2 {
+	background-position: 0 -2200px;
+}
+.ht-small-5 {
+	background-position: 0 -1000px;
+}
+.ht-small-6 {
+	background-position: 0 -1500px;
+}
+.ht-small-7 {
+	background-position: 0 -1400px;
+}
+.ht-small-8 {
+	background-position: 0 -900px;
+}
+.am-small-1 {
+	background-position: 0 -667px;
+}
+.am-small-2, .am-small-26 {
+	background-position: 0 -3200px;
+}
+.am-small-3 {
+	background-position: 0 -3702px;
+}
+.am-small-4 {
+	background-position: 0 -1900px;
+}
+.am-small-5 {
+	background-position: 0 -2900px;
+}
+.am-small-6 {
+	background-position: 0 -3902px;
+}
+.rt-small-3 {
+	background-position: 0 0;
+}
+.am-small-7 {
+	background-position: 0 -1600px;
+}
+.am-small-8 {
+	background-position: 0 -2600px;
+}
+.am-small-9 {
+	background-position: 0 -2100px;
+}
+.rt-small-1, .rt-small-7 {
+	background-position: 0 -100px;
+}
+.rt-small-15{
+	background-position: 0 -1600px;
+}
+.am-small-10 {
+	background-position: 0 -2500px;
+}
+.am-small-11 {
+	background-position: 0 -3400px;
+}
+.am-small-12 {
+	background-position: 0 -3000px;
+}
+.am-small-13 {
+	background-position: 0 -3100px;
+}
+.am-small-14 {
+	background-position: 0 -3802px;
+}
+.am-small-15 {
+	background-position: 0 -2000px;
+}
+.am-small-16 {
+	background-position: 0 -2400px;
+}
+.pt-small-1 {
+	background-position: 0 -1000px;
+}
+.pt-small-16{
+}
+.am-small-17 {
+	background-position: 0 -517px;
+	height: 16px;
+}
+.am-small-18 {
+	background-position: 0 -2800px;
+}
+.am-small-19 {
+	background-position: 0 -1800px;
+}
+.am-small-20, .am-small-28 {
+	background-position: 0 -1700px;
+}
+.am-small-21 {
+	background-position: 0 -2300px;
+}
+.am-small-22 {
+	background-position: 0 -3602px;
+}
+.am-small-25{
+	background-position: 0 -4002px;
+}
+.am-small-35{
+	background-position: 0 -3500px;
+}
+.pt-small-2 {
+	background-position: 0 0;
+}
+.pt-small-3 {
+	background-position: 0 -782px;
+}
+.pt-small-4 {
+	background-position: 0 -4303px;
+}
+.pt-small-5 {
+	background-position: 0 -600px;
+}
+.pt-small-6 {
+	background-position: 0 -4403px;
+}
+/*----------------------------------------------------------------------------------------------*/

@@ -1,0 +1,15 @@
+{
+	"name" : "Launch Modes",
+	"description" : "By enabling this, admin can run the site in Pre-launch or Private beta mode. In pre-launch mode the users can able to subscribe for the site updates only and can't able to access any other features. In private beta, only invited user can able to register and access the site features.",
+	"author" : "Agriya",
+	"authorEmail" : "info@agriya.com",
+	"authorUrl" : "http://www.agriya.com",
+	"settings" : "true",
+	"parent": "1.Plugins For All Modules.Children.Growth Hacking.Children",
+	"subplugin" : "",
+	"icon" : "columns",
+	"disable" : 1,
+	"delete" : 1,
+	"module_id": "",
+	"module_hash": ""
+}

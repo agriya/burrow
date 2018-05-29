@@ -1,0 +1,372 @@
+body{
+	color:#666;
+	font-family:"Open Sans", sans-serif;
+	font-size:12px;
+	line-height:18px;
+}
+div.header{
+	color:#fff;
+}
+a{
+	color:#1995c0;
+	text-decoration:none;
+}
+a:hover{
+	color:#000;
+}
+h2{
+	font-size:20px;
+	color:#000;
+	margin-bottom:20px;
+}
+h3{
+    border-bottom: 1px dashed #CCCCCC;
+    font-size: 17px;
+    font-weight: normal;
+    margin:0 0 10px 10px;
+    padding: 10px 0;
+}
+/* header styles*/
+h1 a{
+	font-size:30px;
+	line-height:40px;
+	color:#fff;
+}
+h1 a:hover{
+	color:#fff;
+}
+.h-left{
+	background:url("../../img/install/h-left.png") no-repeat left top;
+}
+.h-right{
+	background:url("../../img/install/h-right.png") no-repeat right top;
+}
+.h-center{
+	background: url("../../img/install/h-center.png") repeat-x left top;
+    height: 45px;
+    margin: 0 6px;
+    padding: 5px 10px;
+}
+.header-installer{
+	font-size:20px;
+	padding: 15px 0 0 10px;
+}
+/* main styles*/
+div.main{
+	background:url("../../img/install/main-bg.png") repeat-y 275px 0;
+	padding:15px 10px;
+	margin: 15px 0 50px 0;
+}
+div.agriya{
+	background:url("../../img/install/agriya-logo.png") no-repeat right top;
+	text-indent:-99999em;
+	width:150px;
+	height:100px;
+	padding: 0 0 0 15px;
+}
+ol.list{
+	background:#f8f7f7;
+	border:1px solid #e5e5e5;
+	padding:10px 5px;
+	margin:12px 0;
+}
+ol.list li {
+	margin: 2px 0;
+    padding: 6px 10px;
+	border:1px solid #f8f7f7;
+	font-size:12px;
+	font-weight:bold;
+}
+ol.list li.active{
+	color:#1995c0;
+	background:#fff;
+	border:1px solid #e6e6e6;
+}
+div.content-block{
+	border:1px solid #e5e5e5;
+	padding:12px 15px;
+	margin:0 0 15px 0;
+}
+p.info{
+	background:url("../../img/install/icon-info.png") no-repeat left center;
+	padding: 0 0 0 45px;
+}
+p.welcome-info{
+	font-weight:bold;
+	color:#1995c0;
+}
+p.welcome-info span{
+	display:block;
+}
+ul.list li {
+	background:url("../../img/install/icon-bullet.png") no-repeat left center;
+	padding:5px 0 5px 10px;
+}
+div.content-block ul.list{
+	margin:0 0 0 15px;
+}
+.set-margin{
+	margin:20px 0;
+}
+.btn-left, .btn-right,div.submit input{
+	display:block;
+	font-size:18px;
+	color:#fff;
+}
+.btn-left, div.submit{
+	background:url("../../img/install/btn-left.png") no-repeat left top;
+	padding: 0 0 0 4px;
+	height:38px;
+}
+.btn-right, div.submit input{
+	background:url("../../img/install/btn-right.png") no-repeat right top;
+	padding: 10px 20px 0 15px;
+	height:28px;
+	display:block;
+	cursor:pointer;
+	border:none;
+	margin:0;
+}
+div.submit input{
+	height:38px;
+	padding-top: 0;
+}
+.btn-left:hover,div.submit:hover{
+	background-position:left bottom;
+}
+.btn-left:hover .btn-right, div.submit:hover input{
+	background-position:right bottom;
+}
+/* footer styles*/
+div.footer{
+	border-top:1px solid #ddd;
+	padding:10px 0;
+	overflow:hidden;
+}
+div.footer-inner{
+	width:655px;
+	margin:0 auto;
+}
+div.footer p, div.footer span {
+    float: left;
+}
+a.powered, a.company, a.cssilize {
+    float: left;
+    margin: 3px;
+    text-indent: -9999em;
+}
+a.powered {
+    background: url("../../img/install/powered-burrow.png") no-repeat left top;
+    height: 17px;
+    width: 92px;
+}
+a.company {
+    background: url("../../img/install/powered-by-agriya.png") no-repeat left center;
+    height: 15px;
+    width: 80px;
+}
+a.cssilize {
+    background: url("../../img/install/cssilize.png") no-repeat center top;
+    height: 4px;
+    padding: 12px 0 1px;
+    width: 118px;
+}
+/* form style is begin */
+form.normal {
+    width: 100%;
+}
+form.normal div.input {
+    margin: 5px;
+    padding: 5px;
+}
+form.normal div.input label{
+    color: #666666;
+	display:block;
+	padding: 3px 0;
+}
+form.normal div.select select, form.normal div.text input, form.normal div.textarea textarea, form.normal div.password input {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #E0DEDE;
+    font-size: 11px;
+    padding: 7px 2px;
+	width: 200px;
+}
+form.normal div.select select:hover, form.normal div.text input:hover, form.normal div.textarea textarea:hover, form.normal div.password input:hover {
+    background: none repeat scroll 0 0 #f9f9f9;
+    border: 1px solid #ddd;
+}
+p.next-step a{
+	border:none;
+	background:#626262;
+	padding:5px;
+	margin: 0 0 0 10px;
+	color:#fff;
+	font-weight:bold;
+	cursor:pointer;
+}
+p.next-step:hover a{
+	background:#ccc;
+	color:#000;
+}
+p.next-step a{
+	width:200px;
+	display:block;
+}
+p.next-step{
+	padding:15px 0 0;
+}
+table.list,table.list td,table.list th {
+	border:1px solid #e5e5e5;
+}
+table.topic-list td,table.topic-list th {
+	border:none;
+	border-bottom:1px solid #e5e5e5;
+}
+table.list-info tr td  {
+	margin:0;
+	padding:5px 10px 5px 5px;
+	border:1px solid #e5e5e5;
+	background-color:#fff;
+	vertical-align:middle;
+	font-size:12px;
+	text-align:left;
+}
+table.list, table.list-info {
+	border-spacing:0;
+	border-collapse:collapse;
+	margin: 5px auto;
+    width: 100%;
+}
+table.list td,table.list th {
+    padding:6px 5px;
+	border-width:1px;
+	background-color:#fff;
+	vertical-align:middle;
+	font-size:12px;
+}
+table.list td{
+	text-align: left;
+}
+table.list th {
+	color:#36769C;
+	background:#DCEDF2;
+	text-align:left;
+}
+table.list th a {
+	color:#36769C;
+}
+table.list th a:hover{
+    text-decoration:none;
+}
+table.list tr.altrow td {
+	background-color:#f0f7fe;
+}
+table.list tr:hover td {
+	background-color:#EFFDFF;
+}
+table.list tr th.dl,table.list tr td.dl {
+	text-align:left;
+}
+table.list tr th.deal-name,table.list tr td.deal-name {
+	width:150px;
+	white-space:wrap;
+}
+table.list tr th.dc,table.list tr td.dc {
+	text-align:center;
+}
+table.list tr th.dr,table.list tr td.dr {
+	text-align:right;
+}
+table.list tr.total-block td {
+	background:#f0f8fe;
+	font-weight:bold;
+}
+table.list tr td.deal-name,table.list tr th.deal-name {
+	width:220px;
+}
+table.list tr td.green, table.list-info tr td.green {
+	background:#91CE5F;
+	color: white;
+    font-size: 13px;
+    font-weight: bold;
+}
+table.list tr td.red, table.list-info tr td.red {
+	background:#ED6F75;
+	color: white;
+    font-size: 13px;
+    font-weight: bold;
+}
+table.list tr td.yellow, table.list-info tr td.yellow {
+	background:#F2F27D;
+	color:#333333;
+    font-size: 13px;
+    font-weight: bold;
+}
+table.list tr td.orange, table.list-info tr td.orange  {
+	background:#F7A33D;
+	color: white;
+    font-size: 13px;
+    font-weight: bold;
+}
+table.list-info tr td.green, table.list-info tr td.red, table.list-info tr td.yellow, table.list-info tr td.orange, table.list-info tr td.orange {
+	background:#91CE5F;
+	width:20px;
+	padding:0;
+}
+table.list-info tr td.red {
+	background:#ED6F75;
+}
+table.list-info tr td.yellow {
+	background:#F2F27D;
+}
+table.list tr td.orange, table.list-info tr td.orange  {
+	background:#F7A33D;
+}
+.info-details {
+    background: url("../../img/icon-info-details.png") no-repeat scroll 10px center #F9F9F9;
+    border: 1px dashed #e5e5e5;
+    margin: 6px auto;
+    padding: 15px 15px 15px 50px;
+    width:85%;
+}
+.error-details, #errorMessage {
+	margin: 6px auto;
+	background:#DB3D47;
+	padding: 15px 15px 15px 50px;
+	color:#fff;
+	font-size:18px;
+	font-weight:bold;
+}
+span.info{
+	background: url("../../img/install/info-icon.png") no-repeat left center;
+	display:block;
+	color:#999;
+	font-size:11px;
+	padding:0 0 0 20px;
+	margin-top:4px;
+}
+/*rounded corner hacks */
+.round-4 {
+	-moz-border-radius:4px;
+	-khtml-border-radius:4px;
+	-o-border-radius:4px;
+	border-radius: 4px;
+}
+/* http://www.positioniseverything.net/easyclearing.html */
+.clearfix:after {
+	clear:both;
+	content:'.';
+	display:block;
+	visibility:hidden;
+	height:0;
+}
+.clearfix {
+	display:inline-block;
+	display:block;
+}
+* html .clearfix {
+	height:1%;
+}
+*+html .clearfix {
+	display: inline-block;
+}

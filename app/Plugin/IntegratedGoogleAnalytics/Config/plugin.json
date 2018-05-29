@@ -1,0 +1,14 @@
+{
+	"name" : "Integrated Google Analytics",
+	"description" : "By enabling this, admin can track the site exclusively using Google Analytics data.",
+	"author" : "Agriya",
+	"authorEmail" : "info@agriya.com",
+	"authorUrl" : "http://www.agriya.com",
+	"settings" : "true",
+	"parent": "1.Plugins For All Modules.Children.Growth Hacking.Children",
+	"icon" : "user-md",
+	"disable" : 1,
+	"delete" : 1,
+	"module_id": "599",
+	"module_hash": "cd260b13883c9d7a642fe58b2874b26c"
+}

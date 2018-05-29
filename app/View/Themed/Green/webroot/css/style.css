@@ -1,0 +1,32 @@
+/*
+Author: CSSilize http://www.cssilize.com/
+Date: 2013-12-18
+(c)2013 CSSilize. All rights reserved.
+*/
+
+.content {
+}
+
+/** common elements */
+
+#header {
+}
+
+#footer {
+}
+
+/** Cssilized by cssilize */
+p#cssilize {
+	padding:35px 0;	
+}
+p#cssilize a {
+	background:url(../images/cssilize.png) no-repeat center top;
+	height:17px;
+	width:118px;
+	display:block;
+	text-indent:-9999em;
+	margin:0 auto;
+}
+p#cssilize a:hover {
+	background-position:center bottom;
+}

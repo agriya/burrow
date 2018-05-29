@@ -1,0 +1,15 @@
+{
+	"name" : "Mobile App",
+	"description" : " By enabling this, the system will give json data for iPhone, BlackBerry & Android App.",
+	"author" : "Agriya",
+	"authorEmail" : "info@agriya.com",
+	"authorUrl" : "http://www.agriya.com",
+	"settings" : "true",
+	"parent": "1.Plugins For All Modules.Children.Mobile Features.Children",
+	"subplugin" : "",
+	"icon" : "mobile-phone",
+	"disable" : 1,
+	"delete" : 1,
+	"module_id": "",
+	"module_hash": ""
+}

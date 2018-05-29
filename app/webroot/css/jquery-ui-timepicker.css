@@ -1,0 +1,96 @@
+/* * Timepicker stylesheet * Highly inspired from datepicker * FG - Nov 2010 - Web3R * * version 0.0.3:Fixed some settings,more dynamic * version 0.0.4:Removed width:100% on tables * version 0.1.1:set width 0 on tables to fix an ie6 bug */
+.ui-timepicker-inline {
+	display:inline;
+}
+#ui-timepicker-div {
+	padding:4px;
+	border:1px solid #ddd;
+    background:#fff;
+}
+.ui-timepicker-table {
+	display:inline-table;
+	width:0;
+}
+.ui-timepicker-table table {
+	margin:0.15em 0 0 0;
+	border-collapse:collapse;
+}
+.ui-timepicker-hours,.ui-timepicker-minutes {
+	padding:0.2em;
+}
+.ui-timepicker-table .ui-timepicker-title {
+    background:#FF0285;
+    color:#fff;
+    font-size:12px;
+    font-weight:bold;
+    line-height:1.8em;
+    text-align:center;
+}
+.ui-timepicker-table td {
+	padding:0.1em;
+	width:2.2em;
+}
+#ui-timepicker-div {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 4px;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius:5px;
+}
+.ui-timepicker-table th.periods {
+    font-size: 12px;
+    font-weight: bold;
+    padding: 0.1em;
+}
+table.ui-timepicker .ui-state-default{
+    border:1px solid #ddd;
+}
+table.ui-timepicker .ui-state-active,table.ui-timepicker .ui-state-hover{
+    border:1px solid #FF0285;
+    background:#FF0285;
+    color:#fff;
+}
+.ui-timepicker-table td{
+    font-family:arial;
+}
+/* span for disabled cells */
+.ui-timepicker-table td span {
+	display:block;
+	padding:0.2em 0.3em 0.2em 0.5em;
+	width:1.2em;
+	text-align:right;
+	text-decoration: none;
+}
+/* anchors for clickable cells */
+.ui-timepicker-table td a {
+	display:block;
+	padding:3px;
+	width:1.2em;
+	cursor:pointer;
+	text-align:right;
+	text-decoration: none;
+	font-size:11px;
+	color:#666;
+}
+/* IE6 IFRAME FIX (taken from datepicker 1.5.3 */
+.ui-timepicker-cover {
+	display:none;
+	/*sorry for IE5*/
+	display/**/:block;
+	/*sorry for IE5*/
+	position:absolute;
+	/*must have*/
+	z-index:-1;
+	/*must have*/
+	filter:mask();
+	/*must have*/
+	top:-4px;
+	/*must have*/
+	left:-4px;
+	/*must have*/
+	width:200px;
+	/*must have*/
+	height:200px;
+	/*must have*/
+}

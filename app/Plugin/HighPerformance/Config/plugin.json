@@ -1,0 +1,14 @@
+{
+	"name" : "High Performance",
+	"description" : "By enabling this, the site speed & performance will improve.",
+	"author" : "Agriya",
+	"authorEmail" : "info@agriya.com",
+	"authorUrl" : "http://www.agriya.com",
+	"settings" : "true",
+	"parent": "1.Plugins For All Modules.Children.Others.Children",
+	"icon" : "rocket",
+	"disable" : 1,
+	"delete" : 1,
+	"module_id": "602",
+	"module_hash": "c33e38567f7dca8e3a0eaa6077ebb03c"
+}

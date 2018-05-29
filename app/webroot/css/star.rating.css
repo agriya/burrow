@@ -1,0 +1,51 @@
+.block1-cm .rating-block .star-rating li a.like,.block1-cm .rating-block .star-rating li a.un-like {
+	display:block;
+	background:url("../img/common-sprite2.png") no-repeat 0 -1055px;
+	text-indent:-3000em;
+	height:20px;
+	width:22px;
+	padding:0px;
+}
+.block1-cm .rating-block .star-rating li a.like:hover {
+	background-position:left -1035px;
+}
+.block1-cm .rating-block .star-rating li a.un-like {
+	background:url("../img/common-sprite2.png") no-repeat 0 -1035px;
+}
+ol.property-list ul.star-rating li{
+    position:static;
+    width:auto;
+}
+.star-rating a:hover,.star-rating a:active,.star-rating a:focus {
+	background-position:left -1055px;
+}
+.star-rating a.one-star {
+	width:20%;
+	z-index:6;
+}
+.star-rating a.two-stars {
+	width:40%;
+	z-index:5;
+}
+.star-rating a.three-stars {
+	width:60%;
+	z-index:4;
+}
+.star-rating a.four-stars {
+	width:80%;
+	z-index:3;
+}
+.star-rating a.five-stars {
+	width:100%;
+	z-index:2;
+}
+.inline-rating {
+	display:-moz-inline-block;
+	display:-moz-inline-box;
+	display:inline-block;
+	vertical-align: middle;
+}
+.small-star {
+	width:65px;
+	height:13px;
+}

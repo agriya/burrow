@@ -1,0 +1,493 @@
+/*Media query styles*/
+@media (min-width: 980px) and (max-width: 1024px) {
+body {
+	.content {
+		.container-fluid {
+    		padding-left: 3%;
+    		padding-right: 3%;
+			}
+			.navbar {
+				.nav.admin-menu{
+					> li {
+						width:9%;
+						> a{
+							.pad(10px, 0, 10px, 0);
+						}
+					}
+				}
+			}
+			.desk-no-mar{
+				margin:0px;
+			}
+		}
+	}
+
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+	body {
+		.content {
+			.no-mar {
+				.mar(0, 0, 0, 0);
+			}
+			.container-fluid {
+				padding-left: 2%;
+				padding-right: 2%;
+			}
+			.banner-bg, .banner-bg > div {
+				position:static;
+				.mar(0, 0, 0, 0);
+				width:auto;
+				text-align:center;
+				.space{
+					.pad(10px, 10px, 10px, 10px);
+				}
+			}
+			.space {
+				.pad(8px, 8px, 8px, 8px);
+			}
+			.navbar-inner{
+				padding-left:10px;
+				padding-right:10px;
+			}
+			.price-section{
+				bottom:117px;
+			}
+
+			.navbar {
+				.nav {
+					> li {
+						> a{
+							.pad(10px, 10px, 10px, 10px);
+						}
+					}
+				}
+			}
+			 .tab-no-pad{
+				.pad(0, 0, 0, 0);
+			}
+			 .tab-no-mar{
+				.mar(0, 0, 0, 0);
+			}
+			.tab-clr{
+				display:block;
+				float:none;
+				width: auto;
+			}			
+			.tab-right{
+				float:right;
+			}			
+			.tab-left{
+				float:left;
+			}
+			.paging span a, .paging .prev, .paging .next, .paging .current, .paging .ellipsis{
+				.pad(0, 12px, 0, 12px);
+			}
+			.nav-collapse{ 
+				.dropdown-menu{
+					.mar(0, 0, 0, 0);				
+					a:hover{
+						background-color:@red;
+					} 
+				}
+			}
+			.progress{
+				width:320px;
+			}
+			.admin-menu{
+				>li{
+					width:12.5%;
+					>a{
+						.pad(10px, 1px, 10px, 1px) !important;
+						font-size:11px
+					}
+				}
+			}
+			.user-menu{
+				>li{
+					>a{
+						.pad(10px, 10px, 10px, 10px);
+					}
+				}
+			}
+			.activity-content{
+				.mar(-30px,0,10px,125px);
+			}
+			.span16-sm{
+				width:465px;
+			}
+			.prop-list {
+				.span20-sm{
+					width:594px;
+				}
+			}
+			/*.activities-block{
+				width:55%;
+			}
+			.details-block{
+				width:42%;
+			}*/
+			.message-block{
+				width: 672px;
+			}
+			.span-5-sm{
+				width:190px;
+			}
+			.form-horizontal{
+				.span4-sm{
+				width:148px;
+				}
+				.span20-sm{
+					width:586px;
+				}
+			}
+			.nav-tabs > li{
+				> a{				
+					.pad(8px, 15px, 8px, 15px);				
+				}
+				&.active {			
+					a, a:hover{				
+						.pad(8px, 15px, 8px, 15px);
+					}
+				}
+		    }
+			.admin-menu > li {
+				width: 75px;
+			}
+			
+		.cc-type, .cc-default {
+				right: 10px;
+			 	left:auto;
+			 	bottom: 9px;
+			}
+		}
+	}
+}
+@media (max-width:767px) {
+    body {
+        .content {
+			.container{
+				padding-left:2%;
+				padding-right:2%;
+			}			
+            .mob-clr {
+                float: none;
+                display: block;
+                width: auto;
+            }
+			.mob-pf{
+				position:fixed;
+			}			
+			.mob-no-mar{
+				.mar(0, 0, 0, 0);
+			}
+			.mob-no-pad{
+				.pad(0, 0, 0, 0);
+			}
+			.mob-sep-none{
+				border:none;
+			}
+			.mob-dc{
+				text-align:center;
+			}
+			.mob-dl{
+				text-align:left;
+			}
+			.mob-inline{
+			display: inline-block;
+			float:none;
+			}
+			.htruncate{
+			display:block !important;
+			}
+            [class*="span"].more {
+                width: 35px;
+            }
+            .navbar {
+                .sep, .sep-top, .sep-right, .sep-bot {
+                    border: none;
+                }
+                [class*="span"] {
+                    margin-left: 0;
+                }
+            }
+			.navbar .navbar-inner{	
+				.in-count{
+					.label{
+						right: auto;
+						left:20px;
+					}
+				}
+			}
+			.mob-ps{
+				position:static;
+			}
+			.mob-sep-non{
+			border:none;
+			}
+			.navbar .nav > li > {
+				&:before, &:after {
+					display:none;
+				}
+				>a{
+					border-right:none;
+					border-left:none;
+				}
+			}
+			.banner{	
+				height: auto;
+			 }
+			.cc-type, .cc-default {
+				right: 8%;
+			 	left:auto;
+			 	bottom: 6px;
+			}
+			dl.list{
+			.pad(4px, 0px, 15px,0px);
+			border:none;
+			float:none;
+			width:100%;
+			text-align:center;
+			}
+			
+			.navbar {
+				.nav.admin-menu{
+					> li {
+						width:auto;
+					}
+				}
+			}
+			ol.activities-list{
+				background:none;
+				>li{
+					background:none;
+					text-align:center;
+				}
+			}	
+			.htruncate{
+				display:block !important;
+			}
+			.htruncate{
+				overflow:visible;
+				white-space:normal;
+				height:auto;
+			}		
+			 .banner-content{
+				.mar(20px, 0, 0, 0);
+			}					
+			.prop-count{
+				top:0px;
+			}			
+			.nav-collapse{ 
+				.dropdown-menu{
+					.mar(0, 0, 0, 0);				
+					a:hover{
+						background-color:@red;
+					} 
+				}
+			}
+			.book-it-drop{
+				left:0;
+				width:100%;
+			}
+			.tab-content{
+				overflow:visible;
+			}
+			.nav-tabs > li, .nav-pills > li{
+			border-left:1px solid #ccc;
+			float:none;
+			}
+			
+			.user-menu{
+				border-right:1px solid #e2e2e2;
+			}
+			.mob-text-24{
+				font-size:20px;
+			}
+			.pagination ul > li > a, body .content .pagination ul > li > span {
+    			padding: 4px 12px;
+			}			
+			.haccordion{
+				height:auto !important;
+				width:100%;
+				.mar(0, auto, 0, auto);
+				>ul, >li{
+					width:100%;
+				}
+				 > ul li {
+    				width: 100%;
+				}
+			}
+			.prop-list{
+				>li:hover{
+					.pad(10px, 0, 10px, 0);
+					.mar(0, 0, 0, 0);
+				}
+			}
+			.form-calendar{
+				[class*="span"]{
+					float:left;
+				}
+			}
+			.cal-title{
+				float:left;
+				width:90%;
+			}
+			.hidden-sm{
+				display:none;
+			}
+			.row-fluid .offset2:first-child {
+				margin-left: 0;
+			}
+			/*.activities-block{
+				width:100%;
+			}*/
+			.progress{
+				width:100%;
+			}
+			/*.details-block{
+				width:100%;
+				.pad(10px, 0, 10px, 0);
+			}*/
+			input[type="text"],
+			input[type="password"],
+			input[type="datetime"],
+			input[type="datetime-local"],
+			input[type="date"],
+			input[type="month"],
+			input[type="time"],
+			input[type="week"],
+			input[type="number"],
+			input[type="email"],
+			input[type="url"],
+			input[type="search"],
+			input[type="tel"],
+			input[type="color"],
+			.uneditable-input input {
+				height:33px;
+				width:94%;
+				.pad(3px, 6px, 3px, 6px);
+			}
+			select{
+				width:97%;
+			}
+			.form-horizontal {
+				 label, .group-inline span, .group-block span, .checkbox >span {
+					width: auto;
+					margin-left:7px;					
+				}
+			}
+			.message-block{
+				width: auto;
+			}
+			.prop-list-mob {
+				.arrow:before, .arrow:after{
+					left: 5%
+				}
+			}			
+			.activities-block{
+			  .nav-tabs{
+			    >li{
+				    float:left;
+				}
+			  }
+			}
+			#datepicker table.datepicker-night-mode td span.datepicker-days-block{
+			    border-width: 0 0 25px 25px;
+				span{
+					left: -18px;
+					top: 8px;
+				}
+			}
+        }
+    }
+}
+@media (max-width: 450px) {
+	body {
+		.content {
+			.text-16 {
+				height:auto;
+			}
+			
+			.pagination ul > li > a, body .content .pagination ul > li > span {
+    		padding: 4px 8px;
+			}			
+			.nav-collapse {
+				.navbar-search {
+					.pad(10px, 5px, 10px, 9px);
+				}
+			}
+			footer, .footer-push {
+				.container {
+					.pad(0, 0, 0, 0);
+				}
+			}
+			.paging span a, .paging .prev, .paging .next, .paging .current, .paging .ellipsis{
+				.pad(0, 8px, 0, 8px);
+			}
+		}
+	}
+}
+
+@media (max-width:300px) {
+	body {
+		.content {
+			.paging span a, .paging .prev, .paging .next, .paging .current, .paging .ellipsis{
+				.pad(0, 3px, 0, 3px);
+			}
+			.calendar .form-calendar {   
+    			padding: 2px 14px 3px;    
+			}			
+			.nav-tabs {
+				> li{
+					float:none;
+				}
+			}
+			.prop-list-mob {
+				.dropdown-menu {
+					left: -75px;
+				}
+				.arrow:before, .arrow:after{
+					left: 45%
+				}
+			}
+			.form-horizontal {
+				.submit{
+					margin-left:0;
+				}
+			}
+			input[type="text"],
+			input[type="password"],
+			input[type="datetime"],
+			input[type="datetime-local"],
+			input[type="date"],
+			input[type="month"],
+			input[type="time"],
+			input[type="week"],
+			input[type="number"],
+			input[type="email"],
+			input[type="url"],
+			input[type="search"],
+			input[type="tel"],
+			input[type="color"],
+			.uneditable-input input {
+				width:92%;
+			}
+			select{
+				width:97%;
+			}
+		}
+	}
+}
+
+@media (min-width:470px) and (max-width:580px) {
+body {
+		.content {
+			.prop-list-mob {
+				.dropdown-menu {
+					left: 34%;
+				}
+			}
+		}
+	}
+}

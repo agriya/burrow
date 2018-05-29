@@ -1,0 +1,393 @@
+/* Common Fliter style is Begin */
+div.select-block {
+	line-height:30px;
+}
+div.select-block span , p.key-info-block > span {
+	-moz-border-radius:3px;
+	-khtml-border-radius:3px;
+	-o-border-radius:3px;
+	border-radius:3px;
+    margin: 4px 2px 4px 0;
+    padding: 0 2px;
+	line-height:23px;
+	font-size:11px;
+	font-weight:bold;
+    position:relative;
+	display:inline-block;
+}
+div.select-block span span {
+    display: inline;
+    line-height: 18px;
+    margin: 0;
+    padding: 0;
+}
+div.select-block span a, p.key-info-block span a {
+	padding:0 5px;
+	color:#fff;
+	font-weight:bold;
+}
+p.key-info-block span.all a, div.select-block span.select, div.select-block span.waitingforyourreview a:hover, div.select-block span.all a.active, div.select-block span.all a:hover, div.select-block span a.active, div.select-block span a:hover {
+	color:#000;
+}
+div.select-block span.all span, div.select-block span.all a {
+	color:#333;
+}
+p.key-info-block span.all:hover, p.key-info-block span.all a:hover, div.select-block span.all:hover, div.select-block span.all a:hover {
+	color:#1C7DF4;
+}
+div.property-status-info{
+    float:left;
+}
+div.property-status-info span {
+	height:12px;
+	width:12px;
+	margin:2px 2px 0;
+    padding:0;
+    float:left;
+    display:block;
+    text-indent:-3000em;
+}
+span.completed, span.property-verified, span.enabled, span.systemflagged, span.arrived, span.rejected, span.waitingforyourreview, span.paymentpending {
+	background:#8B65D6;
+	color: #fff;
+	padding: 1px 4px;
+	white-space: nowrap;
+}
+span.available, span.active, span.inactive, span.property-verified, span.isverified, span.filter-homepage, span.filter-featured, span.isfeatured {
+    -moz-border-radius: 3px 3px 3px 3px;
+    background:  #4CAF52;
+    color: #fff;
+    font-size: 9px;
+    margin: 0 1px;
+    padding: 1px 3px 2px 4px;
+    position: relative;
+    vertical-align: super;
+    white-space: pre;
+}
+span.systemflagged{
+    background:#FF4500;
+}
+span.enabled {
+	background:#636363;
+}
+span.arrived {
+	background:#49A7FF;
+}
+span.all, p.key-info-block span.al1 {
+	background:#fff;
+	border:1px solid #dedede;
+}
+span.filter-homepage {
+	background:#0063DC;
+}
+span.filter-featured,span.featured {
+	background:#F783D4;
+}
+span.confirmed, span.arrivedconfirmed, span.inprogress, span.open, span.negotiationconfirmed {
+    background: #828214;
+}
+span.payment_cleared {
+	background:#828214;
+}
+span.currentorupcoming, span.homepage {
+	background:#0C68D9;
+}
+span.featured, span.isfeatured {
+	background:#74d5e3;
+}
+span.waitingadministratordecision {
+	background:#F52887;
+}
+span.waitingadministratordecision {
+	background:#C6929E;
+}
+span.pendinghostaccept {
+	background:#6DC699;
+}
+span.waitingforadministratordecision {
+	background:#F52887;
+}
+span.property-waiting-verfication {
+	background:#330690;
+}
+span.waitingforacceptance {
+    background: #F49B00;
+}
+span.pending {
+	background:#cf4318;
+}
+span.waitingforverfication {
+	background:#FF0400;
+}
+span.adminsuspended,span.suspended {
+	background:#CF9A0C;
+}
+span.paymentpending {
+	background:#EF5212;
+}
+span.underdiscussion {
+	background:#88ba6d;
+}
+span.bookingrejected {
+	background:#b372b2;
+}
+span.verified {
+	background:#DAE504;
+}
+span.refundable {
+	background:#0ebec9;
+	vertical-align:super;
+    display: inline-block;
+    margin: 0 2px 3px 0;
+    padding: 0 2px;
+    color:#fff;
+}
+span.waitingforyourreview {
+    background: #FF0B89;
+}
+span.waitingforreview{
+    background:#eda710;
+}
+span.waitingforapproval {
+	background:#EDA710;
+}
+span.importedfromairbnb {
+	background:#b70606;
+}
+span.rejected, span.hostrejected, span.notverified, span.verificationrejected {
+	background:#df5958;
+}
+span.cancelled, .cancel {
+	background:#FD66B5;
+}
+.cancelled-by-admin{
+	background:#C576D3;
+}
+span.Travelerrejected, span.negotiationrejected, span.property-not-verified {
+	background:#DE595A;
+}
+span.expired, span.closed {
+	background:#A5A5A5;
+	padding:1px 4px;
+}
+span.negotiate-amount {
+	background:#666365;
+}
+span.negotiate-amount span {
+	border:none;
+	padding:0px;
+}
+span.openid-user {
+	background:#F8931F;
+}
+span.gmail-user {
+	background:#D80707;
+}
+span.yahoo-user {
+	background:#7B0099;
+}
+span.facebook-user {
+	background:#3B5998;
+}
+span.twitter-user {
+	background:#39B8DB;
+}
+span.approved {
+	background:#AC379B;
+}
+span.success {
+	background:#0E910E;
+}
+span.failed {
+	background:#7B0099;
+}
+span.filter-suspended {
+	background:#CF9A0C;
+}
+span.total-user, span.total, span.filter-suspended-negotiable, span.filter-suspended-user, span.filter-flag {
+	padding:2px;
+	white-space:nowrap;
+}
+span.filter-flag,span.flagged {
+	background:#3C4A89;
+}
+span.filter-suspended-user {
+	background:#DC143C;
+}
+span.filter-suspended-negotiable,span.suspended-negotiable{
+	background:#DC1CCC;
+}
+span.total-user, span.total {
+	background:#A5A5A5;
+}
+span.isverified {
+	background:#ff9f0c;
+}
+span.disabled, span.inactive {
+    background:#A19DA3;
+    color: #FFFFFF;
+}
+div.select-block span.disabled a {
+	color:#879699;
+}
+td.notavailable {
+	background:#d96566;
+}
+div.table-select-block span.active, div.table-select-block span.inactive {
+	vertical-align:bottom;
+}
+/* Common Fliter style is End */
+/* New filter style is begin */
+ul.filter-list-block {
+	margin:10px 0 0 0;
+	padding:0 0 10px;
+	border-bottom:1px solid #ddd;
+}
+ul.filter-list-block li {
+	float:left;
+	border-left:1px solid #ddd;
+}
+ul.filter-list-block li:first-child {
+	border:none;
+}
+ul.filter-list-block li a {
+    display: block;
+    font-size: 18px;
+    padding: 6px 15px;
+}
+ul.filter-list-block li a:hover {
+    color:#FF0084;
+}
+ul.filter-list-block li.active-filter, ul.filter-list-block li:hover {
+	background:#f7f7f7;
+}
+ul.filter-list-block li a span {
+    color: #B1B1B1;
+    display: block;
+    font-size: 10px;
+	font-weight:normal;
+}
+.blue a {
+    color:#36AED1;
+}
+.orange a{
+    color:#EF5212;
+}
+.green a, li.open a{
+    color:#61a409;
+}
+.gray a{
+    color:#A19DA3;
+}
+li.closed a{
+    color:#A5A5A5;
+}
+.yellow a{
+    color:#DAE504;
+}
+.red a{
+    color:#FF0400;
+}
+.dark-yellow a, li.underdiscussion a, li.waitingforyourreview a{
+    color:#EDA710;
+}
+.purple a {
+    color:#B600FF;
+}
+.brown a{
+	color:#541B1B;
+}
+.navy-blue a{
+	color:#5403B7;
+}
+.light-orange a{
+	color: #FF9707;
+}
+.past a,.completed  a{
+	color:#8B65D6;
+}
+.gmail-user a{
+	color:#D80707;
+}
+.suspended a{
+	color:#CF9A0C;
+}
+.system-flagged a{
+	color:#FF4500;
+}
+div.property-status-info .system-flagged{
+    background:#FF4500;
+}
+.featured a{
+	color:#74d5e3;
+}
+.yahoo a, li.confirmed a{
+	color:#ce37ff;
+}
+.light-blue a{
+	color:#345591;
+}
+.all a, .black a,li.all-count a{
+	color:#000;
+}
+.dark-green a, li.confirmed a{
+	color:#408700;
+}
+.light-blue2 a{
+	color:#00eaff;
+}
+.meroon a, li.negotiationrequested a{
+	color:#B371AF
+}
+.import a{
+	color:#cc9999;
+}
+.pink a{
+	color:#ff6699;
+}
+.light-pink a{
+	color:#ff99cc;
+}
+.red a, li.waitingadministratordecision a{
+	color:#ff0000;
+}
+.home-page a{
+	color:#0063DC
+}
+.import a{
+	color:#b70606
+}
+.waitingforapproval a {
+	color:#EDA710;
+}
+.verified a{
+	color:#DAE504;
+}
+.waitingforverfication a{
+	color:#9bcf51;
+}
+.user-suspended a{
+	color:#A19DA3;
+}
+.currentorupcoming a{
+	color:#0C68D9;
+}
+.waitingforacceptance a{
+	color:#4E8975;
+}
+.cancelled a{
+	color:#FD66B5;
+}
+.rejected a ,.hostrejected a,.notverified a,.verificationrejected a{
+	color:#DF5958;
+}
+.arrived a{
+	color:#49A7FF;
+}
+.paymentpending a{
+	color:#ED6E38;
+}
+.expired a,.closed a{
+	color:#A5A5A5;
+}
+/* New filter style is End */

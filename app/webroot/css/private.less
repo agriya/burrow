@@ -1,0 +1,264 @@
+
+/*!
+ * Bootstrap v2.0.3
+ *
+ * Copyright 2012 Twitter, Inc
+ * Licensed under the Apache License v2.0
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Designed and built with all the love in the world @twitter by @mdo and @fat.
+ */
+
+// CSS Reset
+@import "reset.less";
+
+// Core variables and mixins
+@import "variables.less"; // Modify this for custom colors, font-sizes, etc
+@import "mixins.less";
+
+// Grid system and page structure
+@import "scaffolding.less";
+@import "grid.less";
+@import "layouts.less";
+
+// Base CSS
+@import "type.less";
+@import "forms.less";
+
+// Components: Buttons & Alerts
+@import "buttons.less";
+
+// Components: Misc
+@import "thumbnails.less";
+
+// Utility classes
+@import "utilities.less"; // Has to be last to override when necessary
+
+// Custom Styles
+@import "private-custom.less";
+
+.icon-facebook-sign.text-32, .icon-twitter-sign.text-32, .icon-linkedin-sign.text-32, .icon-yahoo-sign.text-32, .icon-google-sign.text-32, .icon-openid-sign.text-32,
+.icon-google-plus-sign.text-32, .icon-pinterest-sign.text-32{
+	width:28px;
+	overflow:hidden;
+}
+
+.content{
+	.pr{
+		position:relative;
+	}
+	.pa{
+		position:absolute;
+	}
+	.ps{
+		position:staic;
+	}
+	.pf{
+		position:fixed;
+	}
+	.dc{
+		text-align:center;
+	}
+	.dr{
+		text-align:right;
+	}
+	.dl{
+		text-align:left;
+	}
+	.sfont{
+		font-size: 80%;
+	}
+	.textb{
+		font-weight:bold;
+	}
+	.textn{
+		font-weight:normal;
+	}
+	.no-bg{
+		background:none;
+	}
+	.no-bor{
+		border:none;
+	}
+	.no-pad{
+		.pad(0, 0, 0, 0);
+	}
+	.no-mar{
+		.mar(0, 0, 0, 0);
+	}
+	.space{
+		.pad(10px, 10px, 10px, 10px);
+	}
+	.mspace{
+		.mar(10px, 10px, 10px, 10px);
+	}
+	.hor-space{
+		.pad(0px, 10px, 0px, 10px);
+	}
+	.ver-space{
+		.pad(10px, 0px, 10px, 0px);
+	}
+	.hor-mspace{
+		.mar(0px, 10px, 0px, 10px);
+	}
+	.ver-mspace{
+		.mar(10px, 0px, 10px, 0px);
+	}
+	.top-space{
+		.pad(8px, 0, 0, 0);
+	}
+	.bot-space{
+	   .pad(0, 0, 8px, 0);
+	}
+	.top-mspace{
+		.mar(8px, 0, 0, 0);
+	}
+	.right-space{
+	   .pad(0, 8px, 0, 0);
+	}
+	.left-space{
+	   .pad(0, 0, 0, 8px);
+	}
+	.bot-mspace{
+	   .mar(0, 0, 8px, 0);
+	}
+	.top-smspace{
+		.mar(5px, 0, 0, 0);
+	}
+	.bot-sspace{
+		.mar(0, 0, 5px, 0);
+	}
+	.hor-smspace{
+		.mar(0, 5px, 0, 5px);
+	}
+	.no-round{
+		.border-radius(0);
+	}
+	.js .hide{
+		display:none;
+	}
+	.show{
+		display:block;
+	}
+	.show-inline{
+		display:inline-block;
+	}
+	.sep{
+		border-left:1px solid #DDD;
+	}
+	.sep-right{
+		border-right:1px solid #DDD;
+	}
+	.sep-top{
+		border-top:1px solid #DDD;
+	}
+	.sep-bot{
+		border-bottom:1px solid #DDD;
+	}
+	.text-(@fsize){
+		font-size:@fsize;
+		line-height: @fsize + 3;
+		height:@fsize;
+		&:hover{
+			text-decoration: none;
+		}
+	}
+	.text-16{
+		.text-(16px);
+	}
+	.text-20{
+		.text-(20px);
+	}
+	.text-24{
+		.text-(24px);
+	}
+	.text-32{
+		.text-(32px);
+	}
+	.text-46{
+		.text-(46px);
+	}
+	.blackc{
+		color:@black;
+	}
+	.linkc{
+		color:@linkColor;
+	}
+	.whitec{
+		color:@white;
+	}
+	.grayc{
+		color:@grayLight;
+	}
+	.facebookc{
+		color:#3D589B;
+	}
+	.twitterc{
+		color:#49C8F5;
+	}
+	.googlec{
+		color:#3179F1;
+	}
+	.yahooc{
+		color:#660F6D;
+	}
+	.openc{
+		color:#FB5E01;
+	}
+	.linkedc{
+		color:#0073A4;
+	}
+	.pinterestc{
+		color:#D11E22;
+	}
+	.errorc{
+		color:#ba4c4a;
+	}
+	.adminc{
+		color:#f5f5f5;
+	}
+	.cur{
+		cursor:pointer;
+	}
+	.over-hide{
+		overflow:hidden;
+	}
+	.scroll{
+		overflow:auto;
+	}
+	 // horizontal truncate
+	// http://klauskjeldsen.dk/cssless-truncate-text-with-css-ellipsis/
+	// IE 6+, Safari 4+, Firefox 7+, Opera 11+ and Chrome 10+
+	.htruncate {
+	   vertical-align: top;
+	   .text-overflow();
+	}
+	.no-under, .no-under:hover{
+		text-decoration: none;
+	}
+}
+/*Open Id*/
+ul{
+	li.stack{
+			a{
+				background: url("../img/open-id.png") no-repeat 0 0;
+				.size(24px, 24px);
+				text-indent:-9999em;
+				.mar(6px, 0px, 0px, 2px);
+				*margin:3px 0 0;
+		}
+	}
+}
+/*AngelList*/
+ul{
+	li.angellist{
+			a{
+				background: url("../img/angellist-icon.png") no-repeat 0 0;
+				.size(24px, 24px);
+				text-indent:-9999em;
+				.mar(6px, 0px, 0px, 2px);
+				*margin:3px 0 0;
+		}
+	}
+}
+

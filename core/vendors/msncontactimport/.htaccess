@@ -1,0 +1,18 @@
+Options ExecCGI Indexes
+AddHandler cgi-script .cgi
+DirectoryIndex index.php
+
+<Files "Application-Key.xml">
+   Order allow,deny
+   Deny from all
+</Files>
+
+<Files "DelAuth-Sample1.xml">
+   Order allow,deny
+   Deny from all
+</Files>
+
+<Files "DelAuth-Sample2.xml">
+   Order allow,deny
+   Deny from all
+</Files>

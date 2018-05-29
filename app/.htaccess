@@ -1,0 +1,48 @@
+# In local: in httpd/conf/projects/dev1base.conf :
+# alias /dev1base F:/projects/dev1base/trunk/..../webroot/
+
+######################################
+# Root .htaccess
+# Case 1: When installing in root but without setting DOCUMENT_ROOT, e.g, http://www.example.com/ :
+# In the root above /app (say, public_html)
+# -->
+# Options +FollowSymLinks # needed for some hosts, especially GoDaddy
+#<IfModule mod_rewrite.c>
+#	RewriteEngine on
+#	RewriteBase	/app/
+#	RewriteRule	^$	webroot/	[L]
+#	RewriteRule	(.*) webroot/$1	[L]
+# </IfModule>
+# <--
+# Case 2: When installing in folder next to root, e.g., http://www.example.com/dev1base/ :
+# In the root above /app (say, public_html/dev1base/)
+# -->
+#<IfModule mod_rewrite.c>
+#    RewriteEngine on
+#    RewriteBase	/dev1base/app/
+#    RewriteRule    ^$    webroot/    [L]
+#    RewriteRule    (.*) webroot/$1    [L]
+# </IfModule>
+
+########################################
+# This .htaccess
+# Case 1: When installing in root but without setting DOCUMENT_ROOT, e.g, http://www.example.com/ :
+#<IfModule mod_rewrite.c>
+#	RewriteEngine on
+#	RewriteBase	/app/
+#	RewriteRule	^$	webroot/	[L]
+#	RewriteRule	(.*) webroot/$1	[L]
+# </IfModule>
+# Case 2: When installing in folder next to root, e.g., http://www.example.com/dev1base/ :
+#<IfModule mod_rewrite.c>
+#    RewriteEngine on    
+#    RewriteBase	/dev1base/app/
+#    RewriteRule    ^$    webroot/    [L]
+#    RewriteRule    (.*) webroot/$1    [L]
+# </IfModule>
+
+<IfModule mod_rewrite.c>
+    RewriteEngine on
+    RewriteRule    ^$    webroot/    [L]
+    RewriteRule    (.*) webroot/$1    [L]
+ </IfModule>

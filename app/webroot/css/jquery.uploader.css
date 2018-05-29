@@ -1,0 +1,101 @@
+@media screen;
+
+/* Firefox 3 fix: http://code.google.com/p/swfobject/wiki/faq */
+object { outline: none; }
+/*  BUTTON CONTAINER */
+#btnContainer button {
+	width:120px;
+	height:120px;
+	border:none;
+	padding:0;	
+	background:none;
+	cursor:pointer;
+	margin:8px 2px 2px;
+}
+#btnContainer button span {
+	display:none;
+}
+/*UPLOAD QUEUE  */
+div.wuQ {	
+	background: #fff;
+	height: 80px;	
+	width:120px;
+	margin:0px 2px 0px 10px;
+	position:absolute;
+	z-index:90;
+}
+div.wuQ div.wuI {
+	color: #000000;
+	height: 40px;
+	margin:0;	
+	background:#fff;
+}
+a.file-delete {
+	background:url('../img/jquery_uploader/uploadDelete.gif') no-repeat 0 0;
+}
+div.wuQ div.wuI div.wuIC {
+	font-size: 13px;
+}
+div.wuQ div.wuI div.wuIC a {
+	padding: 2px 0 2px 12px;
+	text-decoration: none;
+	font-weight: bold;
+	color: #000;
+}
+div.wuQ div.wuI div.wuIC a:hover {
+	color: #0000ff;
+}
+div.wuQ div.wuI div.wuIC div.wuICPB {
+	display: none;
+    line-height: 14px;
+}
+div.wuQ div.wuI div.wuIC div.wuICPB div.wuICPBF {
+	width: 0%;
+	height: 15px;
+	color: #fff;
+	background: #337DAB;
+	text-align: left;
+	font-size: 8px;
+	font-weight: bold;
+    margin:25px 0 0;
+    padding: 3px 0;
+}
+*+html div.wuQ div.wuI div.wuIC div.wuICPB div.wuICPBF {
+    line-height: 18px;
+    padding: 1px 0 2px;
+    margin:34px 0 0 -6px;
+    float:left;
+}
+div.wuQ div.wuI div.wuIC div.wuICPT {
+	display: none;
+}
+p.errorMsg {
+	background:#ffebf3;
+	border:1px solid #f06;
+	margin: 0 0 10px 0px;
+	width:100%;
+	padding:10px;
+}
+div.clearAll a, .property-image-preview a{
+	position:absolute;
+	right:0;
+	top:0;
+	background:url('../img/jquery_uploader/uploadDelete.gif') no-repeat 0 0;
+	z-index:200;
+	width:16px;
+	height:16px;
+    margin:3px;
+    padding:0;
+}
+.property-image-preview a{
+	margin:-5px 0px 0px 3px;
+}
+.property-image-preview{
+	left:0;
+	position:absolute;
+	top:0;
+	z-index:100;
+	width:138px;
+	background:#fff;
+	margin:8px 2px 2px;
+}

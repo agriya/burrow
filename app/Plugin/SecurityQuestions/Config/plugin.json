@@ -1,0 +1,17 @@
+{
+	"name" : "Security Questions",
+	"description" : "By enabling this, user can enter answers for predefined security questions when register and will provide the security answer when user reset their password.",
+	"author" : "Agriya",
+	"authorEmail" : "info@agriya.com",
+	"authorUrl" : "http://www.agriya.com",
+	"admin" : {
+		"controller" : "security_questions",
+		"action" : "index"
+	},
+	"parent": "1.Plugins For All Modules.Children.Others.Children",
+	"icon" : "lock",
+	"disable" : 1,
+	"delete" : 1,
+	"module_id": "",
+	"module_hash": ""
+}

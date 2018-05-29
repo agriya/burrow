@@ -1,0 +1,1 @@
+<?php echo $this->Html->link('<i class="'.$class.' text-14"></i>' , $url , array('escape'=>false, 'class' => 'change-star-unstar js-like js-no-pjax'));?>

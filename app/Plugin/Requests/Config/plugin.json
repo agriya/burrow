@@ -1,0 +1,20 @@
+{
+	"name" : "Requests",
+	"description" : "By enabling this, user can request the any property for booking.",
+	"author" : "Agriya",
+	"authorEmail" : "info@agriya.com",
+	"authorUrl" : "http://www.agriya.com",
+	"parent": "1.Plugins For All Modules.Children",
+	"subplugin" : "RequestFavorites,RequestFlags",
+	"dependencies": {
+		"plugins" : {
+			"Properties" : "Properties"
+		}
+	},
+	"icon" : "mail-reply-all",
+	"disable" : 1,
+	"delete" : 1,
+	"settings" : "true",
+	"module_id": "616",
+	"module_hash": "247ef2b16bf09085e3463853a35caa80"
+}

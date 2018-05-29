@@ -1,0 +1,241 @@
+/* Common styles
+-------------------------- */
+body {
+	.content{
+		.dc{
+			text-align:center;
+		}
+		.dl{
+			text-align:left;
+		}
+		.dr{
+			text-align:right;
+		}
+		.textb{
+			font-weight:bold;
+		}
+		.textn{
+			font-weight:normal;
+		}
+		.no-pad{
+			.pad(0, 0, 0, 0);
+		}
+		.no-mar{
+			.mar(0, 0, 0, 0);
+		}
+		.blackc{
+			color:@black;
+		}
+		.sep-top{
+			border-top:1px solid #DDD;
+		}
+        .space{
+			.pad(10px, 10px, 10px, 10px);
+		}
+		.mspace{
+			.mar(10px, 10px, 10px, 10px);
+		}
+		.hor-space{
+			.pad(0px, 10px, 0px, 10px);
+		}
+		.ver-space{
+			.pad(10px, 0px, 10px, 0px);
+		}
+		.hor-mspace{
+			.mar(0px, 10px, 0px, 10px);
+		}
+		.ver-mspace{
+			.mar(10px, 0px, 10px, 0px);
+		}
+        .top-space{
+			.pad(8px, 0, 0, 0);
+		}
+		.bot-space{
+		   .pad(0, 0, 8px, 0);
+		}
+		.top-mspace{
+			.mar(8px, 0, 0, 0);
+		}
+		.bot-mspace{
+		   .mar(0, 0, 8px, 0);
+		}
+        .grayc{
+			color:@grayLight;
+		}
+		.text-(@fsize){
+			font-size:@fsize;
+			line-height: @fsize;
+			height:@fsize;
+			&:hover{
+				text-decoration: none;
+			}
+		}
+		.text-16{
+			.text-(16px);
+		}
+		.text-13{
+			.text-(13px);
+		}
+		 // horizontal truncate
+		// http://klauskjeldsen.dk/cssless-truncate-text-with-css-ellipsis/
+		// IE 6+, Safari 4+, Firefox 7+, Opera 11+ and Chrome 10+
+		.htruncate {
+		   vertical-align: top;
+		   .text-overflow();
+		}
+	}
+}
+
+/*Bg style */
+#bg-stretch{
+    height: 100%;
+    left: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+/*Background image to be auto-resized to window... */
+#bg-stretch-autoresize, #bg-stretch, #bg-repeat {
+	height:100%;
+	left:0;
+	overflow:hidden;
+	position:fixed;
+	top:0;
+	width:100%;
+	z-index:-1;
+}
+#bg-stretch img {
+	height:100% !important;
+	width:100% !important;
+}
+#bg-repeat img {
+	display: none;
+}
+.beta-block{
+	width:430px;
+	margin: 0 auto;
+	position:relative;
+	padding:7% 0 0;
+}
+div.project-block {
+  min-height: auto;
+}
+input.code {
+	width:296px;
+}
+.blackc label {
+	font-weight:bold;
+	padding-left:0;
+}
+.thanks{
+	color:#e48027;
+}
+.were{
+	color:#30b4ef;
+}
+.btn-align{
+	margin-top:28px;
+}
+.error {
+	color:red;
+	font-weight:bold;
+}
+.invited {
+	text-align:left;
+	font-size:12px;
+	font-weight:bold;
+	margin-top:12px;
+}
+p#cssilize a{
+   background: url("../img/cssilize.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 16px;
+    margin: 0 auto;
+    text-indent: -9999em;
+    width: 119px;
+}
+a.powered {
+    background: url("../img/powered-burrow.png") no-repeat scroll 0 0 transparent;
+    height: 17px;
+    width: 100px;
+}
+p#cssilize a, a.powered, a.company {
+    float: left;
+    margin: 3px 0 0;
+    text-indent: -9999em;
+}
+a.company {
+    background: url("../img/powered-by-agriya.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 18px;
+    margin: 3px 5px 0;
+    width: 80px;
+}
+#footer{
+	background:#fff;
+	width:100%;
+	position:fixed;
+	bottom:0;
+	left:0;
+	height:20px;
+}
+@media (max-width: 480px) {
+	body {
+	.content{
+	   .beta-block{
+	   		width:auto;
+			margin:0 auto 120px;
+	   }
+	.btn-align{
+			padding-top:0;
+		}
+		ul.follow li{
+			display:inline;
+		}
+	}
+  }
+}
+// Shared size and type resets
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+.uneditable-input input {
+	font-size:16px;
+	.pad(11px, 6px, 11px, 6px);
+	.box-shadow(none);
+  
+  	&:focus {
+		border-color: @red;   
+		.box-shadow(none);
+  	}
+	
+}
+select{
+	height: 41px;
+    padding: 10px;
+}
+.btn-large{
+	.pad(11px, 20px, 11px, 20px) !important;
+	font-size:16px !important;
+	*padding:9px 20px 8px !important; /*for ie7*/
+}
+.btn-primary, input[type="submit"], .btn{
+	border:none;
+}
+label {
+	font-size : 90%;
+}

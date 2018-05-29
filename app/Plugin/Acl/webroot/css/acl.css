@@ -1,0 +1,40 @@
+table.list tr th.alias,table.list tr th.role-name  {
+	width:350px;
+}
+table.list tr.inactive-row td {
+    font-weight:bold;
+	color:#fff;
+	cursor:pointer;
+}
+table.list tr td.acl-name,table.list tr.up-arrow td,table.list tr.down-arrow td{
+    padding:7px 7px 7px 25px;
+}
+table.list tr.up-arrow td{
+    background:url("../acl/img/hide-arrow.png") no-repeat 5px 8px #6F6F6F;
+}
+table.list tr.down-arrow td{
+    background:url("../acl/img/show-arrow.png") no-repeat 5px 8px #6F6F6F;
+}
+/* permission links style is begin */
+ul.permission-links li {
+	float:left;
+	margin:0px 3px;
+}
+ul.permission-links a {
+	display:block;
+	width:16px;
+	height:16px;
+	text-indent:-3000em;
+}
+a.no-permission {
+	background:url("../acl/img/no-permission.png") no-repeat left top;
+}
+a.individual-permission {
+	background:url("../acl/img/individual-permission.png") no-repeat left top;
+}
+a.group-permission {
+	background:url("../acl/img/group-permission.png") no-repeat left top;
+}
+a.all-permission {
+	background: url("../acl/img/all-permission.png") no-repeat left top;
+}

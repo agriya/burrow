@@ -1,0 +1,138 @@
+<?php
+/**
+ * Burrow
+ *
+ * PHP version 5
+ *
+ * @category   PHP
+ * @package    Burrow
+ * @subpackage Core
+ * @author     Agriya <info@agriya.com>
+ * @copyright  2018 Agriya Infoway Private Ltd
+ * @license    http://www.agriya.com/ Agriya Infoway Licence
+ * @link       http://www.agriya.com
+ */
+class CmsNav extends Object
+{
+    protected static $_items = array();
+    protected static $_defaults = array(
+        'title' => false,
+        'url' => '#',
+        'weight' => 9999,
+        'access' => array() ,
+        'children' => array() ,
+        'htmlAttributes' => array() ,
+    );
+    protected static function _setupOptions(&$options)
+    {
+        $options = self::_merge(self::$_defaults, $options);
+        foreach($options['children'] as &$child) {
+            self::_setupOptions($child);
+        }
+    }
+    /**
+     * Add a menu item
+     *
+     * @param string $path dot separated path in the array.
+     * @param array $options menu options array
+     * @return void
+     */
+    public static function add($path, $options)
+    {
+        $pathE = explode('.', $path);
+        $pathE = array_splice($pathE, 0, count($pathE) -2);
+        $parent = join('.', $pathE);
+        if (!empty($parent) && !Set::check(self::$_items, $parent)) {
+            $title = Inflector::humanize(end($pathE));
+            $o = array(
+                'title' => $title
+            );
+            self::_setupOptions($o);
+            self::add($parent, $o);
+        }
+        self::_setupOptions($options);
+        $current = Set::extract($path, self::$_items);
+        if (!empty($current)) {
+            self::_replace(self::$_items, $path, $options);
+        } else {
+            self::$_items = Set::insert(self::$_items, $path, $options);
+        }
+    }
+    /**
+     * Replace a menu element
+     *
+     * @param array $target pointer to start of array
+     * @param string $path path to search for in dot separated format
+     * @param array $options data to replace with
+     * @return void
+     */
+    protected static function _replace(&$target, $path, $options)
+    {
+        $pathE = explode('.', $path);
+        $path = array_shift($pathE);
+        $fragment = join('.', $pathE);
+        if (!empty($pathE)) {
+            self::_replace($target[$path], $fragment, $options);
+        } else {
+            $target[$path] = self::_merge($target[$path], $options);
+        }
+    }
+    /**
+     * Merge $firstArray with $secondArray
+     *
+     * Similar to Set::merge, except duplicates are removed
+     * @param array $firstArray
+     * @param array $secondArray
+     * @return array
+     */
+    protected static function _merge($firstArray, $secondArray)
+    {
+        $merged = Set::merge($firstArray, $secondArray);
+        foreach($merged as $key => $val) {
+            if (is_array($val) && is_int(key($val))) {
+                $merged[$key] = array_unique($val);
+            }
+        }
+        return $merged;
+    }
+    /**
+     * Remove a menu item
+     *
+     * @param string $path dot separated path in the array.
+     * @return void
+     */
+    public static function remove($path)
+    {
+        self::$_items = Set::remove(self::$_items, $path);
+    }
+    /**
+     * Clear all menus
+     *
+     * @return void
+     */
+    public static function clear()
+    {
+        self::$_items = array();
+    }
+    /**
+     * Sets or returns menu data in array
+     *
+     * @param $items array if empty, the current menu is returned.
+     * @return array
+     */
+    public static function items($items = null)
+    {
+        if (!empty($items)) {
+            self::$_items = $items;
+        }
+        return self::$_items;
+    }
+    /**
+     * Gets default settings for menu items
+     * @return array
+     */
+    public static function getDefaults()
+    {
+        return self::$_defaults;
+    }
+}
