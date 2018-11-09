@@ -1,164 +1,79 @@
-Installation Steps
-------------------
-### Server Requirements
+# Burrow
 
-	* PHP Version - 5.2.7+ (preferably 5.3.5)
-        Extensions
-            GD Version - 2.x+
-            PCRE Version - 7.x+
-            cURL version - 7.x+
-            json version - 1.x+
-            PDO
-            Freetype
-            mbstring
-            PHP ionCube Loader
-        php.ini settings
-            max_execution_time - 180 (not mandatory)
-            max_input_time - 6000 (not mandatory)
-            memory_limit - 128M (at least 32M)
-            safe_mode - off
-            open_basedir - No Value
-            display_error = On
-            magic_quotes_gpc = Off
-    * MySQL Version - 5.x
-    * Apache - 1+ (preferably 2+)
-        Modules
-            mod_rewrite
-            mod_deflate (not mandatory, but highly recommended for better performance–gzip)
-            mod_expires (not mandatory, but highly recommended for better performance–browser caching)
-    Recommended Linux distributions: Centos / Ubuntu / RedHat
+Burrow is an open source online platform for vacation rental and accommodation booking that is capable to run sites similar to airbnb,finder,etc. It is written in CakePHP with MySQL.
 
-### Initial Configurations
+> This is project is part of Agriya Open Source efforts. Burrow was originally a paid script and was selling around 12000 Euros. It is now released under dual license (OSL 3.0 & Commercial) for open source community benefits.
 
-* Extract Files
-		
-		Unzip the zip file
+![burrow_banner](https://user-images.githubusercontent.com/4700341/48258940-719bb280-e43c-11e8-998d-4d7aedda4933.png)
 
-		Upload the unzipped files in server.
+## Support
 
-* Need write permission for following folders
+Burrow is an open source online platform for vacation rental and accommodation booking project. Full commercial support (commercial license, customization, training, etc) are available through [Burrow platform support](https://www.agriya.com/products/airbnb-clone)
 
-Note: The above folders need to be writable (Have to chmod to 655 or 755 or 775 depending upon the server configuration. Note: 777 is highly discouraged).
+Theming partner [CSSilize for design and HTML conversions](http://cssilize.com/)
 
-    Make sure the permission as read,write and executable as recursively for the below directories
+## Features
 
-    app/Config
-    app/media
-    app/tmp
-    app/webroot
-    app/webroot/js
-    app/webroot/img
-    app/webroot/css
-    app/Console/Command/cron.sh
-    app/Console/Command/CronShell.php
-    core/lib/Cake/Console/cake
-    core/vendors/securimage
+### Site
 
-### Updating site logo
+Ability to search properties in popular cities. Cities will display depending upon the properties count.
 
-There are few places where site logo is located. To change the logo, you need to replace your logo with the exact name and resolution in the following mentioned directories.
+### Multi-Language Support
 
-* Site Logo
+Translation of front end with multilingual support. Site visitors can translate any webpage by click the drop-down box beside language.
 
-    	app/webroot/img/logo.png                      - 285 x 57
+### Negotiation
 
-* Favicon
+Burrow has negotiation workflow when negotiation is enabled by host. Traveler will contact host for negotiation in property view page. Host can able to give discount for booking in activities page.
 
-     	app/webroot/favicon.ico                        - 16 x 16
+### Ticket
 
-### Configure Apache
+Ticket will be available for traveler after host confirmed his booking. Payment release is not based on ticket, but it can be used to check authenticity of the traveler, host's address, policies, instructions, etc.
 
-* If you can reset 'DocumentRoot'
+### Payment
 
-Reset your Apache DocumentRoot to /public_html/app/webroot/ by following means:
+Multiple payment gateway can be enabled using SudoPay account and Wallet.
 
-    If you're on dedicated hosting, reset DocumentRoot in httpd.conf with /public_html/app/webroot/
-    If you're on shared hosting, reset your virtual directory to point to /public_html/app/webroot/
+### Property video
 
-Note: This requirement is not mandatory, but highly preferred to skip the following tweaks in htaccess files.
+Here we can post video for property. Ability to post photos and videos by visited guests for other guests. This will help new traveler to get better understanding about the property.
 
-* If you cannot reset 'DocumentRoot'
+### Affiliate
 
-Installing site directly in the root e.g., http://yourdomain.com/
+User can associate/refer our site to a different network thereby referred user can earn commission.
 
-Again, no need to tweak 'htaccess' files.
+## Getting Started
 
-Installing site as a sub-folder e.g., http://yourdomain.com/myfolder
+### Prerequisites
 
-    app/.htaccess ensure the RewriteBase as below:
+#### For deployment
 
-RewriteBase    /myfolder/app/
+* MySQL
+* PHP >= 5.5.9 with OpenSSL, PDO, Mbstring and cURL extensions
+* Nginx (preferred) or Apache
 
-    app/webroot/.htaccess ensure the RewriteBase as below:
+### Setup
 
-RewriteBase	/myfolder/
+* Needs writable permission for `/tmp/` , `/media/` and `/webroot/` folders found within project path
+* Database schema 'app/Config/Schema/sql/burrow_with_empty_data.sql'
+* Cron with below:
+```bash
+# Common
+*/2 * * * * /{$absolute_project_path}/app/Console/Command/cron.sh 1 >> /{$absolute_project_path}/app/tmp/error.log 2 >> /{$absolute_project_path}/app/tmp/error.log
+```
 
-### Set Your Directory Index (Homepage)
+### Contributing
 
-We have set default directory index for the burrow is index.html and its mentioned in app/webroot/.htaccess file, index.html created automatically in burrow for home page quick load. If you want to override the settings then you need to remove index.html in the following line in app/webroot/.htaccess file,
+Our approach is similar to Magento. If anything is not clear, please [contact us](https://www.agriya.com/contact).
 
-	DirectoryIndex index.php
+All Submissions you make to Burrow through GitHub are subject to the following terms and conditions:
 
-### Setting up cron
-
-Setup the cron with any one of the following command,
-
-		*/2 * * * * /home/public_html/app/Console/Command/cron.sh 1>> /home/public_html/app/tmp/error.log 2>> /home/public_html/app/tmp/error.log
-
-Also you need to edit '/home/public_html/app/Console/Command/cron.sh' file to change the folder path of each command. Note: Please replace ”/home/public_html/” with your folder path.
-
-(or)
-
-php4 is enabled for shell command in some server, above command will not work. In that case, you can use anyone of the following commands,
-
-* Command 1:
-
-Check php installed path in server using ssh command. which php or which php5. It will give output like /usr/bin/php5.
-
-	vi /home/public_html/core/lib/Cake/Console/cake
- 
-	exec php -q ${LIB}cake.php -working "${APP}" "$@"
-
-In the above file, change the php path with your server php5 installed path,
-
-	exec /usr/bin/php5 -q ${LIB}cake.php -working "${APP}" "$@"
-
-(or)
-
-* Command 2:
-
-		*/2 * * * * wget http://yourdomain.com/cron/main
-		0 0 * * * wget http://yourdomain.com/cron/daily
-
-(or)
-
-* Command 3:
-
-		*/2 * * * * lynx http://yourdomain.com/cron/main
-		0 0 * * * lynx http://yourdomain.com/cron/daily
-
-(or)
-
-* Command 4:
-
-		*/2 * * * * curl http://yourdomain.com/cron/main
-		0 0 * * * curl http://yourdomain.com/cron/daily
-
-### Install your site
-
-Now run the site http://yourdomain.com/ or http://yourdomain.com/myfolder and install your site easily. Please follow the steps, Burrow Installer.
+* You grant Agriya a perpetual, worldwide, non-exclusive, no charge, royalty free, irrevocable license under your applicable copyrights and patents to reproduce, prepare derivative works of, display, publicly perform, sublicense and distribute any feedback, ideas, code, or other information ("Submission") you submit through GitHub.
+* Your Submission is an original work of authorship and you are the owner or are legally entitled to grant the license stated above.
 
 
-### Verify Your Configuration
+### License
 
-* Running site for the first time
+Copyright (c) 2014-2018 [Agriya](https://www.agriya.com/).
 
-Now run the site with http://yourdomain.com/ or http://yourdomain.com/myfolder
-After successful running of the site, login as admin using the below details in the login form.
-
-      username: admin
-      password: agriya
-
-To change administrator profile details, click 'My Account' in the top menu, then edit the profile information.
-To change administrator password, click 'Change Password' in the top menu, then change the password.
-
+Dual License (OSL 3.0 & [Commercial License](https://www.agriya.com/contact))
