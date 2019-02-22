@@ -1,6 +1,6 @@
 # Burrow
 
-Burrow is an open source online platform for vacation rental and accommodation booking that is capable to run sites similar to airbnb,finder,etc. It is written in CakePHP with MySQL.
+Burrow is an open source online platform for real estate, hotel, vacation rental, room sharing and accommodation booking,etc that is capable to run sites similar to airbnb, finder, airbnb clones, etc. It can also be used for similar business models such as car pooling, bike sharing, or any sharing marketplace website.
 
 > This is project is part of Agriya Open Source efforts. Burrow was originally a paid script and was selling around 12000 Euros. It is now released under dual license (OSL 3.0 & Commercial) for open source community benefits.
 
@@ -74,6 +74,6 @@ All Submissions you make to Burrow through GitHub are subject to the following t
 
 ### License
 
-Copyright (c) 2014-2018 [Agriya](https://www.agriya.com/).
+Copyright (c) 2014-2019 [Agriya](https://www.agriya.com/).
 
 Dual License (OSL 3.0 & [Commercial License](https://www.agriya.com/contact))
