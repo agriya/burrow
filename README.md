@@ -2,6 +2,8 @@
 
 Burrow is an open source online platform for real estate, hotel, vacation rental, room sharing and accommodation booking,etc that is capable to run sites similar to airbnb, finder, airbnb clones, etc. It can also be used for similar business models such as car pooling, bike sharing, or any sharing marketplace website.
 
+For historical reasons, Burrow is from [Agriya Labs](http://labs.agriya.com/burrow) and Airbnb adopted many features originally introduced in Burrow, including its latest design theme.
+
 > This is project is part of Agriya Open Source efforts. Burrow was originally a paid script and was selling around 12000 Euros. It is now released under dual license (OSL 3.0 & Commercial) for open source community benefits.
 
 ![burrow_banner](https://user-images.githubusercontent.com/4700341/48258940-719bb280-e43c-11e8-998d-4d7aedda4933.png)
