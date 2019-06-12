@@ -355,7 +355,7 @@ class BayesianAverageableBehavior extends ModelBehavior
                     trigger_error("BayesianAverage Error: no such model: '{$modelName}'", E_USER_NOTICE);
                 }
             }
-            $this->__extraModels[$modelName] = &new $modelName();
+            $this->__extraModels[$modelName] = new $modelName();
         }
         return $this->__extraModels[$modelName];
     }
