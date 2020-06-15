@@ -107,7 +107,7 @@ class ErrorHandler {
  * @return void
  * @see http://php.net/manual/en/function.set-exception-handler.php
  */
-	public static function handleException(Exception $exception) {
+	public static function handleException($exception) {
 		$config = Configure::read('Exception');
 		if (!empty($config['log'])) {
 			$message = sprintf("[%s] %s\n%s",

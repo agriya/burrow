@@ -20,7 +20,7 @@
 App::uses('AppShell', 'Console/Command');
 App::uses('File', 'Utility');
 App::uses('Folder', 'Utility');
-App::uses('String', 'Utility');
+App::uses('CakeText', 'Utility');
 App::uses('Security', 'Utility');
 
 /**
@@ -207,7 +207,7 @@ class ProjectTask extends AppShell {
 				}
 
 				foreach ($Folder->messages() as $message) {
-					$this->out(String::wrap(' * ' . $message), 1, Shell::VERBOSE);
+					$this->out(CakeText::wrap(' * ' . $message), 1, Shell::VERBOSE);
 				}
 
 				return true;

@@ -29,7 +29,7 @@ App::uses('AppHelper', 'View/Helper');
  * @package       Cake.View.Helper
  * @property      HtmlHelper $Html
  * @link http://book.cakephp.org/2.0/en/core-libraries/helpers/text.html
- * @see String
+ * @see CakeText
  */
 class TextHelper extends AppHelper {
 
@@ -66,7 +66,7 @@ class TextHelper extends AppHelper {
  * @throws CakeException when the engine class could not be found.
  */
 	public function __construct(View $View, $settings = array()) {
-		$settings = Hash::merge(array('engine' => 'String'), $settings);
+		$settings = Hash::merge(array('engine' => 'CakeText'), $settings);
 		parent::__construct($View, $settings);
 		list($plugin, $engineClass) = pluginSplit($settings['engine'], true);
 		App::uses($engineClass, $plugin . 'Utility');
@@ -211,7 +211,7 @@ class TextHelper extends AppHelper {
 	}
 
 /**
- * @see String::highlight()
+ * @see CakeText::highlight()
  *
  * @param string $text Text to search the phrase in
  * @param string $phrase The phrase that will be searched
@@ -224,7 +224,7 @@ class TextHelper extends AppHelper {
 	}
 
 /**
- * @see String::stripLinks()
+ * @see CakeText::stripLinks()
  *
  * @param string $text Text
  * @return string The text without links
@@ -235,7 +235,7 @@ class TextHelper extends AppHelper {
 	}
 
 /**
- * @see String::truncate()
+ * @see CakeText::truncate()
  *
  * @param string $text String to truncate.
  * @param integer $length Length of returned string, including ellipsis.
@@ -248,7 +248,7 @@ class TextHelper extends AppHelper {
 	}
 
 /**
- * @see String::excerpt()
+ * @see CakeText::excerpt()
  *
  * @param string $text String to search the phrase in
  * @param string $phrase Phrase that will be searched for
@@ -262,7 +262,7 @@ class TextHelper extends AppHelper {
 	}
 
 /**
- * @see String::toList()
+ * @see CakeText::toList()
  *
  * @param array $list The list to be joined
  * @param string $and The word used to join the last and second last items together with. Defaults to 'and'
