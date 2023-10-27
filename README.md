@@ -10,7 +10,7 @@ For historical reasons, Burrow is from [Agriya Labs](http://labs.agriya.com/burr
 
 ## Support
 
-Burrow is an open source online platform for vacation rental and accommodation booking project. Full commercial support (commercial license, customization, training, etc) are available through [Burrow platform support](https://www.agriya.com/products/airbnb-clone)
+Burrow is an open source online platform for vacation rental and accommodation booking project. Full commercial support (commercial license, customization, training, etc) are available through [ReserveLogic platform support](https://www.iscripts.com/reservelogic/)
 
 Theming partner [CSSilize for design and HTML conversions](http://cssilize.com/)
 
